@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+#projects{
+    width:90%;
+    margin:auto;
+    padding:60px 0;
+}
+
+.title{
+    text-align:center;
+    font-size:50px;
+    color:#38bdf8;
+}
+
+.subtitle{
+    text-align:center;
+    margin:20px 0 50px;
+    color:#d1d5db;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:35px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    transition:.4s;
+    border:1px solid #334155;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,.5);
+}
+
+.project-card h2{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.project-card h3{
+    color:#f59e0b;
+    margin-bottom:20px;
+}
+
+.project-card p{
+    line-height:30px;
+    color:#d6d6d6;
+}
+
+.tech{
+    margin-top:25px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tech span{
+    border:1px solid #38bdf8;
+    border-radius:25px;
+    padding:8px 18px;
+}
+
+.tech span:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+.back-container{
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+}
+
+.back-btn{
+    background:#38bdf8;
+    border:none;
+    padding:14px 35px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:white;
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #38bdf8;
+}
